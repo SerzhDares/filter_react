@@ -1,0 +1,39 @@
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.toolbar button {
+    box-sizing: border-box;
+    background-color: white;
+    color: rgb(104, 105, 107);
+    font-size: 18px;
+    border: 2px solid rgb(104, 105, 107);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.toolbar button:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.toolbar .active_button {
+    background-color: rgb(104, 105, 107);
+    color: white;
+}
+
+.display_projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    align-items: center;
+}
+
+.display_projects img {
+    margin-top: 15px;
+}
+
+.display_projects img:nth-child(3n+2) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
